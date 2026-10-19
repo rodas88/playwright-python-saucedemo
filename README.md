@@ -33,7 +33,7 @@ This repository documents my practical learning journey in QA Automation, progre
 - Module 5 - Page Object Model ✅
 - Module 6 - Pytest ✅
 - Module 7 - Fixtures ✅
-- Module 8 - End-to-End Testing ⏳
+- Module 8 - End-to-End Testing ✅
 - Module 9 - Test Reports ⏳
 - Module 10 - Framework Structure ⏳
 
@@ -45,8 +45,10 @@ The current automation includes:
 2. Entering valid user credentials.
 3. Performing login.
 4. Validating successful navigation to the inventory page.
-5. Validating inventory elements.
-6. Capturing screenshots as test evidence.
+5. Adding a product to the cart.
+6. Opening the shopping cart.
+7. Validating the product inside the cart.
+8. Capturing screenshots as test evidence.
 
 ## Run the Tests
 
