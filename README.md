@@ -9,6 +9,7 @@ This repository documents my practical learning journey in QA Automation, progre
 - Python
 - Playwright
 - Pytest
+- pytest-html
 - Git
 - GitHub
 - Visual Studio Code
@@ -23,6 +24,7 @@ This repository documents my practical learning journey in QA Automation, progre
 - Pytest
 - Fixtures
 - Setup and teardown
+- HTML Test Reports
 
 ## Learning Progress
 
@@ -34,7 +36,7 @@ This repository documents my practical learning journey in QA Automation, progre
 - Module 6 - Pytest ✅
 - Module 7 - Fixtures ✅
 - Module 8 - End-to-End Testing ✅
-- Module 9 - Test Reports ⏳
+- Module 9 - Test Reports ✅
 - Module 10 - Framework Structure ⏳
 
 ## Current Automated Scenario
@@ -53,8 +55,7 @@ The current automation includes:
 ## Run the Tests
 
 ```bash
-python -m pytest automation/saucedemo_modulo7_fixtures.py -s
-```
+python -m pytest automation/saucedemo_modulo8_e2e_tests.py --html=report.html```
 
 ## Project Status
 
