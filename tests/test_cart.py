@@ -3,14 +3,13 @@ import pytest
 from playwright.sync_api import sync_playwright
 from playwright.sync_api import expect
 
-from login_page import LoginPage
+from pages.login_page import LoginPage
 
-# ==========================
-# CREDENCIALES SAUCEDEMO
-# ==========================
-
-USERNAME = "standard_user"
-PASSWORD = "secret_sauce"
+from utils.config import (
+    BASE_URL,
+    USERNAME,
+    PASSWORD
+)
 
 # ==========================
 # FIXTURE PAGE
@@ -37,7 +36,7 @@ def page():
 
 
 # ==========================
-# TEST E2E
+# TEST CART
 # ==========================
 
 def test_add_product_to_cart(page):
@@ -47,7 +46,7 @@ def test_add_product_to_cart(page):
     # ==========================
 
     page.goto(
-        "https://www.saucedemo.com/"
+        BASE_URL
     )
 
     print("✅ Página abierta")
