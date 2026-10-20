@@ -25,6 +25,7 @@ This repository documents my practical learning journey in QA Automation, progre
 - Fixtures
 - Setup and teardown
 - HTML Test Reports
+- Framework Structure
 
 ## Learning Progress
 
@@ -37,7 +38,23 @@ This repository documents my practical learning journey in QA Automation, progre
 - Module 7 - Fixtures ✅
 - Module 8 - End-to-End Testing ✅
 - Module 9 - Test Reports ✅
-- Module 10 - Framework Structure ⏳
+- Module 10 - Framework Structure ✅
+
+## Framework Structure
+
+```text
+pages/
+tests/
+utils/
+screenshots/
+reports/
+```
+
+- pages: Page Objects
+- tests: Automated test cases
+- utils: Shared configuration
+- screenshots: Test evidence
+- reports: HTML execution reports
 
 ## Current Automated Scenario
 
@@ -55,7 +72,8 @@ The current automation includes:
 ## Run the Tests
 
 ```bash
-python -m pytest automation/saucedemo_modulo8_e2e_tests.py --html=report.html```
+python -m pytest tests/test_cart.py --html=reports/report.html
+```
 
 ## Project Status
 

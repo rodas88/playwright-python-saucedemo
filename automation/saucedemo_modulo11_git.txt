@@ -1,0 +1,23 @@
+MODULE 11 - GIT
+
+Git concepts learned in this project:
+
+- git status
+- git add
+- git commit
+- git push
+- git log
+- gitignore
+
+Workflow used:
+
+1. Modify code
+2. git status
+3. git add
+4. git commit
+5. git push
+6. Verify changes in GitHub
+
+Purpose:
+
+Track source code changes and maintain a professional version history.
