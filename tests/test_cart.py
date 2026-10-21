@@ -1,6 +1,3 @@
-import pytest
-
-from playwright.sync_api import sync_playwright
 from playwright.sync_api import expect
 
 from pages.login_page import LoginPage
@@ -10,30 +7,6 @@ from utils.config import (
     USERNAME,
     PASSWORD
 )
-
-# ==========================
-# FIXTURE PAGE
-# ==========================
-
-@pytest.fixture
-def page():
-
-    with sync_playwright() as p:
-
-        browser = p.chromium.launch(
-            headless=False
-        )
-
-        context = browser.new_context()
-
-        page = context.new_page()
-
-        yield page
-
-        context.close()
-
-        browser.close()
-
 
 # ==========================
 # TEST CART
@@ -69,7 +42,7 @@ def test_add_product_to_cart(page):
     # ==========================
 
     expect(page).to_have_url(
-        "https://www.saucedemo.com/inventory.html"
+        BASE_URL + "inventory.html"
     )
 
     print("✅ Inventory validado")
